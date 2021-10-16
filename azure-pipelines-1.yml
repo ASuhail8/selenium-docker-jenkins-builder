@@ -30,3 +30,8 @@ steps:
     repository: 'asuhail8 / selenium-docker-azure'
     command: 'buildAndPush'
     Dockerfile: '**/dockerfile'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
