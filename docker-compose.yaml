@@ -18,7 +18,7 @@ services:
     environment:
       - HUB_HOST=hub
   search-module:
-    image: asuhail8/selenium-docker-azure:$tag
+    image: asuhail8/selenium-docker-azure:$(buildid)
     depends_on :
       - chrome
       - firefox
