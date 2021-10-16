@@ -30,6 +30,11 @@ steps:
     repository: 'asuhail8 / selenium-docker-azure'
     command: 'buildAndPush'
     Dockerfile: '**/dockerfile'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(agent.builddirectory)'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)/drop'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
