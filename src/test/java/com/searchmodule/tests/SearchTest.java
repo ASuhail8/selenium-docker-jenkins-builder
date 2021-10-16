@@ -20,6 +20,12 @@ public class SearchTest extends BaseTest {
         int result =  searchPage.getResult();
         Assert.assertTrue(result>0);
     }
+    
+    @Test
+    public void justGoToTheSite() {
+    	 SearchPage searchPage = new SearchPage(driver);
+         searchPage.goTo();	
+    }
 
 
 
