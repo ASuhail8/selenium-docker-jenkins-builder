@@ -26,13 +26,4 @@ public class SearchTest extends BaseTest {
     	 SearchPage searchPage = new SearchPage(driver);
          searchPage.goTo();	
     }
-    
-    @Test
-    public void justGoToTheSiteOnceAgain() {
-    	 SearchPage searchPage = new SearchPage(driver);
-         searchPage.goTo();	
-    }
-
-
-
 }
