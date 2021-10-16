@@ -13,5 +13,11 @@
 			<class name="com.searchmodule.tests.SearchTest" />
 		</classes>
 	</test> <!-- Test -->
+	<test thread-count="5" name="selenium-test">
+		<parameter name="keyword" value="selenium" />
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
 
