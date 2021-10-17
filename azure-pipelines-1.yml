@@ -35,7 +35,9 @@ steps:
   inputs:
     SourceFolder: '$(agent.builddirectory)'
     Contents: |
-      **
+      **/*.jar
+      **libs
+      **/*.yaml
     TargetFolder: '$(build.artifactstagingdirectory)'
     CleanTargetFolder: true
 - task: PublishBuildArtifacts@1
