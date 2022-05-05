@@ -9,6 +9,7 @@
           <include name="tearDown"/>
           <include name="search"/>
           <include name="setupDriver"/>
+          <include name="goToSearchPage"/>
         </methods>
       </class> <!-- com.searchmodule.tests.SearchTest -->
     </classes>
@@ -21,8 +22,22 @@
           <include name="tearDown"/>
           <include name="search"/>
           <include name="setupDriver"/>
+          <include name="goToSearchPage"/>
         </methods>
       </class> <!-- com.searchmodule.tests.SearchTest -->
     </classes>
   </test> <!-- qa-test(failed) -->
+  <test thread-count="5" name="selenium-test(failed)">
+    <parameter name="keyword" value="selenium"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="search"/>
+          <include name="setupDriver"/>
+          <include name="goToSearchPage"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- selenium-test(failed) -->
 </suite> <!-- Failed suite [search-module] -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>java-test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Oct 16 22:55:53 IST 2021</td>
+<td>Started on:</td><td>Thu May 05 20:20:47 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4786 ms)</td>
+<tr><td>Total time:</td><td>910 seconds (910544 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,23 +67,307 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.searchmodule.tests.SearchTest.justGoToTheSite()'><b>justGoToTheSite</b><br>Test class: com.searchmodule.tests.SearchTest</td>
+<td title='com.searchmodule.tests.SearchTest.setupDriver()'><b>setupDriver</b><br>Test class: com.searchmodule.tests.SearchTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Timed out creating session
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;ebc5a9acef21&apos;, ip: &apos;172.20.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;11.0.15&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Suhails-MacDoo.local&apos;, ip: &apos;fe80:0:0:0:1c8b:756d:180f:a7df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=failDueToTimeout, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=411, classLoaderName=app}, {fileName=Iterable.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=forEach, className=java.lang.Iterable, lineNumber=75, classLoaderName=null}, {fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=timeoutSessions, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=168, classLoaderName=app}, {fileName=GuardedRunnable.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=lambda$guard$0, className=org.openqa.selenium.concurrent.GuardedRunnable, lineNumber=36, classLoaderName=app}, {fileName=Executors.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=515, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runAndReset, className=java.util.concurrent.FutureTask, lineNumber=305, classLoaderName=null}, {fileName=ScheduledThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask, lineNumber=305, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1128, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=628, classLoaderName=null}, {fileName=Thread.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.lang.Thread, lineNumber=829, classLoaderName=null}]
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at test.BaseTest.setupDriver(BaseTest.java:35)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace252553541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace252553541'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Timed out creating session
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;ebc5a9acef21&apos;, ip: &apos;172.20.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;11.0.15&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Suhails-MacDoo.local&apos;, ip: &apos;fe80:0:0:0:1c8b:756d:180f:a7df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=failDueToTimeout, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=411, classLoaderName=app}, {fileName=Iterable.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=forEach, className=java.lang.Iterable, lineNumber=75, classLoaderName=null}, {fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=timeoutSessions, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=168, classLoaderName=app}, {fileName=GuardedRunnable.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=lambda$guard$0, className=org.openqa.selenium.concurrent.GuardedRunnable, lineNumber=36, classLoaderName=app}, {fileName=Executors.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=515, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runAndReset, className=java.util.concurrent.FutureTask, lineNumber=305, classLoaderName=null}, {fileName=ScheduledThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask, lineNumber=305, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1128, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=628, classLoaderName=null}, {fileName=Thread.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.lang.Thread, lineNumber=829, classLoaderName=null}]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at test.BaseTest.setupDriver(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>910</td>
+<td>com.searchmodule.tests.SearchTest@a2431d0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.searchmodule.tests.SearchTest.tearDown()'><b>tearDown</b><br>Test class: com.searchmodule.tests.SearchTest</td>
 <td></td>
-<td>0</td>
-<td>com.searchmodule.tests.SearchTest@4b0b0854</td></tr>
+<td>-1651763158</td>
+<td>com.searchmodule.tests.SearchTest@a2431d0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='com.searchmodule.tests.SearchTest.search()'><b>search</b><br>Test class: com.searchmodule.tests.SearchTest<br>Parameters: java</td>
-<td></td>
-<td>2</td>
-<td>com.searchmodule.tests.SearchTest@4b0b0854</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Timed out creating session
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;ebc5a9acef21&apos;, ip: &apos;172.20.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;11.0.15&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Suhails-MacDoo.local&apos;, ip: &apos;fe80:0:0:0:1c8b:756d:180f:a7df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=failDueToTimeout, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=411, classLoaderName=app}, {fileName=Iterable.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=forEach, className=java.lang.Iterable, lineNumber=75, classLoaderName=null}, {fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=timeoutSessions, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=168, classLoaderName=app}, {fileName=GuardedRunnable.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=lambda$guard$0, className=org.openqa.selenium.concurrent.GuardedRunnable, lineNumber=36, classLoaderName=app}, {fileName=Executors.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=515, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runAndReset, className=java.util.concurrent.FutureTask, lineNumber=305, classLoaderName=null}, {fileName=ScheduledThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask, lineNumber=305, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1128, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=628, classLoaderName=null}, {fileName=Thread.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.lang.Thread, lineNumber=829, classLoaderName=null}]
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at test.BaseTest.setupDriver(BaseTest.java:35)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605988985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605988985'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Timed out creating session
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;ebc5a9acef21&apos;, ip: &apos;172.20.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;11.0.15&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Suhails-MacDoo.local&apos;, ip: &apos;fe80:0:0:0:1c8b:756d:180f:a7df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=failDueToTimeout, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=411, classLoaderName=app}, {fileName=Iterable.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=forEach, className=java.lang.Iterable, lineNumber=75, classLoaderName=null}, {fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=timeoutSessions, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=168, classLoaderName=app}, {fileName=GuardedRunnable.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=lambda$guard$0, className=org.openqa.selenium.concurrent.GuardedRunnable, lineNumber=36, classLoaderName=app}, {fileName=Executors.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=515, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runAndReset, className=java.util.concurrent.FutureTask, lineNumber=305, classLoaderName=null}, {fileName=ScheduledThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask, lineNumber=305, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1128, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=628, classLoaderName=null}, {fileName=Thread.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.lang.Thread, lineNumber=829, classLoaderName=null}]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at test.BaseTest.setupDriver(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.searchmodule.tests.SearchTest@a2431d0</td></tr>
+<tr>
+<td title='com.searchmodule.tests.SearchTest.goToSearchPage()'><b>goToSearchPage</b><br>Test class: com.searchmodule.tests.SearchTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Timed out creating session
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;ebc5a9acef21&apos;, ip: &apos;172.20.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;11.0.15&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Suhails-MacDoo.local&apos;, ip: &apos;fe80:0:0:0:1c8b:756d:180f:a7df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=failDueToTimeout, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=411, classLoaderName=app}, {fileName=Iterable.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=forEach, className=java.lang.Iterable, lineNumber=75, classLoaderName=null}, {fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=timeoutSessions, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=168, classLoaderName=app}, {fileName=GuardedRunnable.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=lambda$guard$0, className=org.openqa.selenium.concurrent.GuardedRunnable, lineNumber=36, classLoaderName=app}, {fileName=Executors.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=515, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runAndReset, className=java.util.concurrent.FutureTask, lineNumber=305, classLoaderName=null}, {fileName=ScheduledThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask, lineNumber=305, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1128, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=628, classLoaderName=null}, {fileName=Thread.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.lang.Thread, lineNumber=829, classLoaderName=null}]
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at test.BaseTest.setupDriver(BaseTest.java:35)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1324514662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1324514662'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Timed out creating session
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;ebc5a9acef21&apos;, ip: &apos;172.20.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;11.0.15&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Suhails-MacDoo.local&apos;, ip: &apos;fe80:0:0:0:1c8b:756d:180f:a7df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=failDueToTimeout, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=411, classLoaderName=app}, {fileName=Iterable.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=forEach, className=java.lang.Iterable, lineNumber=75, classLoaderName=null}, {fileName=LocalNewSessionQueue.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=timeoutSessions, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=168, classLoaderName=app}, {fileName=GuardedRunnable.java, moduleVersion=null, moduleName=null, nativeMethod=false, methodName=lambda$guard$0, className=org.openqa.selenium.concurrent.GuardedRunnable, lineNumber=36, classLoaderName=app}, {fileName=Executors.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=515, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runAndReset, className=java.util.concurrent.FutureTask, lineNumber=305, classLoaderName=null}, {fileName=ScheduledThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask, lineNumber=305, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1128, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=628, classLoaderName=null}, {fileName=Thread.java, moduleVersion=11.0.15, moduleName=java.base, nativeMethod=false, methodName=run, className=java.lang.Thread, lineNumber=829, classLoaderName=null}]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at test.BaseTest.setupDriver(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.searchmodule.tests.SearchTest@a2431d0</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,2 +1,2 @@
-test\BaseTest.class
-com\searchmodule\tests\SearchTest.class
+com/searchmodule/tests/SearchTest.class
+test/BaseTest.class
