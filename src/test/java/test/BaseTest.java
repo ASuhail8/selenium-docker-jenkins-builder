@@ -24,10 +24,10 @@ public class BaseTest {
 		String host = "localhost";
 		MutableCapabilities dc;
 
-		if (System.getProperty("BROWSER") != null && System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
-			dc = new FirefoxOptions();
-		} else {
+		if (System.getProperty("BROWSER") != null && System.getProperty("BROWSER").equalsIgnoreCase("chrome")) {
 			dc = new ChromeOptions();
+		} else {
+			dc = new FirefoxOptions();
 		}
 
 		if (System.getProperty("HUB_HOST") != null) {

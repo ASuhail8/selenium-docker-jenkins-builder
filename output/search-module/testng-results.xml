@@ -2,12 +2,12 @@
 <testng-results skipped="6" failed="0" ignored="0" total="6" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="search-module" duration-ms="609" started-at="2022-05-06T06:37:53 GMT" finished-at="2022-05-06T06:37:54 GMT">
+  <suite name="search-module" duration-ms="600" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
     <groups>
     </groups>
-    <test name="java-test" duration-ms="519" started-at="2022-05-06T06:37:53 GMT" finished-at="2022-05-06T06:37:54 GMT">
+    <test name="java-test" duration-ms="510" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
       <class name="com.searchmodule.tests.SearchTest">
-        <test-method status="FAIL" signature="setupDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@6e1ec318]" name="setupDriver" is-config="true" duration-ms="503" started-at="2022-05-06T06:37:53 GMT" finished-at="2022-05-06T06:37:54 GMT">
+        <test-method status="FAIL" signature="setupDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@6e1ec318]" name="setupDriver" is-config="true" duration-ms="495" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -110,7 +110,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="SKIP" signature="goToSearchPage()[pri:0, instance:com.searchmodule.tests.SearchTest@6e1ec318]" name="goToSearchPage" duration-ms="0" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+        <test-method status="SKIP" signature="goToSearchPage()[pri:0, instance:com.searchmodule.tests.SearchTest@6e1ec318]" name="goToSearchPage" duration-ms="0" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -213,7 +213,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSearchPage -->
-        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@6e1ec318]" name="search" duration-ms="0" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@6e1ec318]" name="search" duration-ms="0" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
           <params>
             <param index="0">
               <value>
@@ -323,15 +323,15 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.searchmodule.tests.SearchTest@6e1ec318]" name="tearDown" is-config="true" duration-ms="-1651819074516" started-at="2022-05-06T06:37:54 GMT" finished-at="1970-01-01T00:00:00 GMT">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.searchmodule.tests.SearchTest@6e1ec318]" name="tearDown" is-config="true" duration-ms="-1651820579517" started-at="2022-05-06T07:02:59 GMT" finished-at="1970-01-01T00:00:00 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.searchmodule.tests.SearchTest -->
     </test> <!-- java-test -->
-    <test name="qa-test" duration-ms="8" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+    <test name="qa-test" duration-ms="9" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
       <class name="com.searchmodule.tests.SearchTest">
-        <test-method status="FAIL" signature="setupDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@1f28c152]" name="setupDriver" is-config="true" duration-ms="8" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+        <test-method status="FAIL" signature="setupDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@1f28c152]" name="setupDriver" is-config="true" duration-ms="8" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -434,7 +434,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="SKIP" signature="goToSearchPage()[pri:0, instance:com.searchmodule.tests.SearchTest@1f28c152]" name="goToSearchPage" duration-ms="0" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+        <test-method status="SKIP" signature="goToSearchPage()[pri:0, instance:com.searchmodule.tests.SearchTest@1f28c152]" name="goToSearchPage" duration-ms="0" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -537,7 +537,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSearchPage -->
-        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@1f28c152]" name="search" duration-ms="0" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.searchmodule.tests.SearchTest@1f28c152]" name="tearDown" is-config="true" duration-ms="-1651820579570" started-at="2022-05-06T07:02:59 GMT" finished-at="1970-01-01T00:00:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@1f28c152]" name="search" duration-ms="0" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
           <params>
             <param index="0">
               <value>
@@ -647,15 +651,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.searchmodule.tests.SearchTest@1f28c152]" name="tearDown" is-config="true" duration-ms="-1651819074568" started-at="2022-05-06T06:37:54 GMT" finished-at="1970-01-01T00:00:00 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.searchmodule.tests.SearchTest -->
     </test> <!-- qa-test -->
-    <test name="selenium-test" duration-ms="9" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+    <test name="selenium-test" duration-ms="8" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
       <class name="com.searchmodule.tests.SearchTest">
-        <test-method status="FAIL" signature="setupDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@6325a3ee]" name="setupDriver" is-config="true" duration-ms="8" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+        <test-method status="FAIL" signature="setupDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@6325a3ee]" name="setupDriver" is-config="true" duration-ms="6" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -758,7 +758,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@6325a3ee]" name="search" duration-ms="0" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@6325a3ee]" name="search" duration-ms="0" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
           <params>
             <param index="0">
               <value>
@@ -868,11 +868,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.searchmodule.tests.SearchTest@6325a3ee]" name="tearDown" is-config="true" duration-ms="-1651819074606" started-at="2022-05-06T06:37:54 GMT" finished-at="1970-01-01T00:00:00 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="goToSearchPage()[pri:0, instance:com.searchmodule.tests.SearchTest@6325a3ee]" name="goToSearchPage" duration-ms="0" started-at="2022-05-06T06:37:54 GMT" finished-at="2022-05-06T06:37:54 GMT">
+        <test-method status="SKIP" signature="goToSearchPage()[pri:0, instance:com.searchmodule.tests.SearchTest@6325a3ee]" name="goToSearchPage" duration-ms="0" started-at="2022-05-06T07:02:59 GMT" finished-at="2022-05-06T07:02:59 GMT">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -975,6 +971,10 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSearchPage -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.searchmodule.tests.SearchTest@6325a3ee]" name="tearDown" is-config="true" duration-ms="-1651820579607" started-at="2022-05-06T07:02:59 GMT" finished-at="1970-01-01T00:00:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.searchmodule.tests.SearchTest -->
     </test> <!-- selenium-test -->
   </suite> <!-- search-module -->
