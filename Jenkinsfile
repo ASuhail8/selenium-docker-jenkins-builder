@@ -5,21 +5,21 @@ pipeline {
         stage('Build Jar') {
             steps {
                 //sh
-                bat "mvn clean package -DskipTests"
+                sh "mvn clean package -DskipTests"
             }
         }
         stage('Build Image') {
             steps {
                 //sh
-                bat "docker build -t=asuhail8/selenium-docker ."
+                sh "docker build -t=asuhail8/selenium-docker ."
             }
         }
         stage('Push Image') {
             steps {
 			    withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                     //sh
-			        bat "docker login --username=${user} --password=${pass}"
-			        bat "docker push asuhail8/selenium-docker"
+			        sh "docker login --username=${user} --password=${pass}"
+			        sh "docker push asuhail8/selenium-docker"
 			    }                           
             }
         }
