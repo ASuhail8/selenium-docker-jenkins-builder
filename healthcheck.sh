@@ -15,4 +15,4 @@ done
 java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* \
     -DHUB_HOST=$HUB_HOST \
     -DBROWSER=$BROWSER \
-    org.testng.TestNG $MODULEcd.
+    org.testng.TestNG $MODULE

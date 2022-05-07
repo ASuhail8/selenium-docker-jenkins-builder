@@ -1,5 +1,7 @@
 FROM openjdk:8u191-jre-alpine3.9
 
+RUN apk add curl jq
+
 WORKDIR /usr/share/udemy
 
 # ADD .jar under target from host
@@ -12,9 +14,12 @@ ADD target/libs libs
 # in case of any other dependency like .csv / .json / .xls
 # please ADD any files required here
 
-ADD search-module.xml search-module.xml
+ADD search-module.xml search-module.
+
+ADD healthcheck.sh healthcheck.sh
+RUN dos2unix healthcheck.sh
 
 # BROWSER
 # HUB_HOST
 # MODULE
-ENTRYPOINT java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -DHUB_HOST=$HUB_HOST -DBROWSER=$BROWSER org.testng.TestNG $MODULE
+ENTRYPOINT sh healthcheck.sh
