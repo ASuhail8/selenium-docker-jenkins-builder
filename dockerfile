@@ -14,7 +14,7 @@ ADD target/libs libs
 # in case of any other dependency like .csv / .json / .xls
 # please ADD any files required here
 
-ADD search-module.xml search-module.
+ADD search-module.xml search-module.xml
 
 ADD healthcheck.sh healthcheck.sh
 RUN dos2unix healthcheck.sh
